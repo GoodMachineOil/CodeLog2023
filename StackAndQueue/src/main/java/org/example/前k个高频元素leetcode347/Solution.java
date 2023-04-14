@@ -32,6 +32,6 @@ public class Solution {
         //在优先队列中存储二元组(num,cnt),cnt表示元素值在数组中的出现次数
         //出现次数按从队头到队尾的顺序 从大到小排，出现次数最低的在队头（相当于小顶堆)
         PriorityQueue<int[]> pd = new PriorityQueue<>((pair1,pair2)->(pair1[1]-pair2[1]));
-        for(Map.Entry<>)
+        for(Map.Entry<>)...
     }
 }
