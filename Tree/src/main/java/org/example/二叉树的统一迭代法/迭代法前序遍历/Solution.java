@@ -25,7 +25,7 @@ public class Solution {
                     stack1.push(node1.left);
                 }
                 stack1.push(node1);
-
+                // 中节点访问过，但是还没有处理，加入空节点做为标记
                 //这里要插入一个null，来标记
                 stack1.push(null);
             }else {
