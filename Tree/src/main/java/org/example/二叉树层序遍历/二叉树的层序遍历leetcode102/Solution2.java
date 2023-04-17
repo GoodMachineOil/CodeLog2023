@@ -7,7 +7,7 @@ import java.util.Queue;
 
 /**
  * @Author: zc
- * @Description://BFS--迭代方式--借助队列
+ * @Description:BFS--迭代方式--借助队列
  */
 public class Solution2 {
     List<List<Integer>> resList = new ArrayList<List<Integer>>();
