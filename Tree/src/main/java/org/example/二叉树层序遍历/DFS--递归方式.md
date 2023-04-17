@@ -7,7 +7,7 @@
 当遍历到没有未访问过的子节点时，返回上一级节点，继续遍历该节点的其他未访问过的子节点；
 当遍历完整棵树时，返回所有访问过的节点，即为DFS遍历的结果。
 下面是一段Java代码示例，演示如何通过递归方式实现二叉树的DFS遍历：
-public void dfs(TreeNode root) {
+[public void dfs(TreeNode root) {
 if (root == null) return; // 如果节点为空，直接返回
 // 访问当前节点
 System.out.println(root.val);
@@ -15,4 +15,4 @@ System.out.println(root.val);
 dfs(root.left);
 // 遍历右子树
 dfs(root.right);
-}
+}](url)
