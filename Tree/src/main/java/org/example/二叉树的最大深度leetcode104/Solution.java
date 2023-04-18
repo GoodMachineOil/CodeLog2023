@@ -21,6 +21,7 @@ import java.util.LinkedList;
  *
  *
  */
+//用前序
 public class Solution {
     public int maxDepth(TreeNode root) {
         if(root == null){
