@@ -24,7 +24,7 @@ import java.util.LinkedList;
 public class Solution {
     public int maxDepth(TreeNode root) {
         if(root == null){
-            return -1;
+            return 0;
         }
         Deque<TreeNode> deque = new LinkedList<>();
         deque.offer(root);
