@@ -7,9 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Arrary" />
-        <module name="Tree" />
         <module name="HashTable" />
+        <module name="BackTracking" />
         <module name="CharacterString" />
+        <module name="Tree" />
         <module name="LinkedList" />
         <module name="StackAndQueue" />
       </profile>
