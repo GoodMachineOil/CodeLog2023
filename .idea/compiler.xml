@@ -11,6 +11,7 @@
         <module name="BackTracking" />
         <module name="CharacterString" />
         <module name="Tree" />
+        <module name="GreedyAlgorithm" />
         <module name="LinkedList" />
         <module name="StackAndQueue" />
       </profile>
