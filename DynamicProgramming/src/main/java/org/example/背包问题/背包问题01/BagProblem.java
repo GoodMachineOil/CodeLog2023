@@ -33,7 +33,7 @@ public class BagProblem {
                     dp[i][j] = dp[i-1][j];
                 }
                 else {
-                    /**
+                    /*
                      * 当前背包的容量可以放下物品i
                      * 那么此时分两种情况：
                      *    1、不放物品i
