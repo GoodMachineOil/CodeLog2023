@@ -15,7 +15,6 @@ public class Solution {
      2 表示有覆盖
      后序遍历，根据左右节点的情况,来判读 自己的状态
      */
-
     public int minCamera(TreeNode root){
         if(root == null){
             // 空节点默认为 有覆盖状态，避免在叶子节点上放摄像头
