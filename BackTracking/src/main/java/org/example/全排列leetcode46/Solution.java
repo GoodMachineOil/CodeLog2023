@@ -25,11 +25,11 @@ public class Solution {
         if(nums.length == 0){
             return resList;
         }
-        backtracking(nums);
+        backtracking(nums,path);
         return resList;
     }
 
-    private void backtracking(int[] nums){
+    private void backtracking(int[] nums,LinkedList<Integer> path){
         if(path.size() == nums.length){
             resList.add(new ArrayList<>(path));
         }
@@ -39,7 +39,7 @@ public class Solution {
                 continue;
             }
             path.add(nums[i]);
-            backtracking(nums);
+            backtracking(nums,path);
             path.removeLast();
         }
     }
