@@ -1,5 +1,6 @@
 package org.example.重新安排行程leetcode332;
 
+import java.util.ArrayList;
 import java.util.List;
 /**
  * @Author: zc
@@ -10,8 +11,8 @@ import java.util.List;
  * 假定所有机票至少存在一种合理的行程。且所有的机票 必须都用一次 且 只能用一次。
  */
 public class Solution {
+    List<List<String>> result = new ArrayList<>();
     public List<String> findItinerary(List<List<String>> tickets) {
-
     }
 
 }
