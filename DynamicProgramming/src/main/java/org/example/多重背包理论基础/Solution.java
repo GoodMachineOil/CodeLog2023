@@ -15,8 +15,8 @@ public class Solution {
                 for(int k = 1 ; k <= nums[i]&&(j-k*weights[i])>=0;k++){
                     dp[j] = Math.max(dp[j], dp[j - k * weights[i]] + k * value[i]);
                 }
-                System.out.println(Arrays.toString(dp));
             }
+            System.out.println(Arrays.toString(dp));
         }
     }
     public static void main(String[] args) {
