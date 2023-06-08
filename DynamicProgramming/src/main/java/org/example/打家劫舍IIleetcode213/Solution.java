@@ -21,6 +21,27 @@ package org.example.打家劫舍IIleetcode213;
  */
 public class Solution {
     public int rob(int[] nums) {
-
+        if(nums == null || nums.length == 0){
+            return 0;
+        }
+        if(nums.length == 1){
+            return nums[0];
+        }
+        //而情况二 和 情况三 都包含了情况一了，所以只考虑情况二和情况三就可以了。
+        int result1 = robRange(nums,0,nums.length-2); //情况二，不包括尾部
+        int result2 = robRange(nums,1,nums.length - 1);//情况三，不包括头部
+        return Math.max(result1, result2);
+    }
+    public int robRange(int[] nums, int start, int end) {
+        if(end == start){
+            return nums[start];
+        }
+        int[] dp = new int[nums.length];
+        dp[start] = nums[start];
+        dp[start+1] = Math.max(nums[start],nums[start+1]);
+        for(int i = start+2 ; i <= end ; i++){
+            dp[i] = Math.max(dp[i-2]+nums[i],dp[i-1]);
+        }
+        return dp[end];
     }
 }
